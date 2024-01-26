@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CRUD-Project{% endblock title %}</title>
+    {% comment %} start-css zone {% endcomment %}
+    <link rel="stylesheet" href="{% static 'crud/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'crud/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'crud/css/style.css' %}">
+    {% comment %} end-css zone {% endcomment %}
+</head>
+<body>
+    <div class="container mt-4">
+      <h3 class="text-center alert alert-danger">CRUD-Function Based ModelForm</h3>
+      {% block content %}{% endblock content%}
+    </div>
+
+
+
+
+
+
+    {% comment %} start-js zone {% endcomment %}
+    <script src="{% static 'crud/js/all.min.js' %}"></script>
+    <script src="{% static 'crud/js/bootstrap.js' %}"></script>
+    <script src="{% static 'crud/js/jquery.js' %}"></script>
+    <script src="{% static 'crud/js/pooper.js' %}"></script>
+    {% comment %} end-js zone {% endcomment %}
+</body>
+</html>
